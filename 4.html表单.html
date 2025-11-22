@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html表单</title>
+    <style>
+        /* 简单美化一下，让大家别挤在一起 */
+        form {
+            border: 2px solid #333;
+            padding: 20px;
+            width: 300px;
+        }
+        div {
+            margin-bottom: 15px; /* 每个问题之间空一行 */
+        }
+    </style>
+</head>
+<body>
+    <h2>用户注册</h2>
+    <form>
+        <!-- 用户名 ，for属性：与input标签的id属性相同，用于关联label标签和input标签-->
+       <label for="username">请输入用户名</label>
+        <input id="username" type="text" placeholder="请输入用户名"><hr>
+        <!-- 密码 -->
+        <label for="password">请输入密码</label>
+    <input id="password" type="password" placeholder="请输入密码">
+    <hr>
+    <!-- 抽象英雄，name属性：用于关联radio标签，用于关联radio标签和input标签 -->
+<label>请选择你的英雄</label><br>
+    <input type="radio" name="hero">哈吉米<br>
+    <input type="radio" name="hero">大狗叫<br>
+    <input type="radio" name="hero">叮咚鸡<br> 
+    <input type="checkbox" name="hobby" id="hobby1">篮球
+    <input type="checkbox" name="hobby" id="hobby2">唱
+    <input type="checkbox" name="hobby" id="hobby3">跳
+    <input type="checkbox" name="hobby" id="hobby4">玩原神
+    <input type="submit" value="看什么看，在这里提交"> 
+    </form>
+</body>
+</html>   
