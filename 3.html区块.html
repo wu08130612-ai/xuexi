@@ -6,12 +6,64 @@
     <title>html区块</title>
 </head>
 <body>
+    <!--导航栏容器-->
     <div class="nav">
    <a href="#">链接一</a>
    <a href="#">链接一</a> 
    <a href="#">链接一</a>
    <a href="#">链接一</a>
     </div>
-    
+    <!--内容容器-->
+    <div class="content">
+        <h1>标题</h1>
+        <p>内容</p> 
+    </div>
+    <!--页脚容器-->
+    <div class="footer">
+        <p>版权信息</p>
+    </div>
+    <!--导航栏样式-->
+    <style>
+        .nav {
+            background-color: #c59d27;
+            color: #a05f22;
+        }
+    </style>
+<!--span标签-->
+<span>这是第一个span</span>
+<span>这是第二个span</span>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 给所有 div 加上蓝色边框，方便看范围 */
+        div {
+            border: 3px solid blue;
+            margin-bottom: 10px; /* 让盒子之间有点空隙 */
+        }
+        
+        /* 给所有 span 加上红色背景，方便看范围 */
+        span {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 实验 1: 块元素的霸道 -->
+    <div>我是第一个 div，我只有几个字，但我占满了整行。</div>
+    <div>我是第二个 div，我被挤到下一行了。</div>
+
+    <hr> <!-- 一条分割线 -->
+
+    <!-- 实验 2: 行内元素的随和 -->
+    <div>
+        这是一段话，其中 <span style="width: 500px; height: 500px;">这两个字</span> 被 span 包裹了。
+        <span>我又来了一个 span</span>，你看我们都在同一行。
+    </div>
+
+</body>
+</html>
 </body>
 </html>
