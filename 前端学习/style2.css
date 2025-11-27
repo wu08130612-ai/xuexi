@@ -1,0 +1,66 @@
+/* 元素选择器 */
+h2 {
+    color: rgba(48, 111, 144, 0.696);
+}
+/* 类选择器 */
+.h3-class {
+    color: rgba(144, 109, 48, 0.696);
+    background-color: rgba(48, 111, 144, 0.696);
+}
+/* id选择器 */
+#h4-id {
+    color: rgba(152, 47, 106, 0.696);
+    background-color: rgba(34, 91, 90, 0.696);
+    font-size: 20px;
+}
+/* 通用选择器 */
+*{
+    color: rgba(255, 255, 255, 0.696);
+    background-color: rgba(0, 0, 0, 0.696);
+    font-family: "楷体 ";
+    font-weight: bolder;
+}
+ /* 子选择器 */
+.father > .son {
+    color: rgba(14, 21, 98, 0.696);
+    background-color: rgba(24, 66, 125, 0.696);
+    font-family: "楷体 ";
+    font-weight: bolder;
+} 
+/*后代选择器 */
+.father .grandson {
+    color: rgba(14, 21, 98, 0.696);
+    background-color: rgba(24, 66, 125, 0.696);
+    font-family: "楷体 ";
+    font-weight: bolder;
+}
+/* 任务 1：把大标题 "水果大作战" 的字体改成 40px */
+/* 提示：它是 id="title" */
+#title {
+    font-size: 40px;
+}
+
+/* 任务 2：把所有列表项 <li> 的文字默认变成灰色 */
+/* 提示：标签选择器 */
+li {
+    color: gray;
+}
+
+/* 任务 3：把所有带有 "sweet" 类名的水果变成 橙色 */
+/* 提示：点 + 名字 */
+.sweet {
+    color: orange;
+}
+
+/* 任务 4：把唯一的 "king" 榴莲变成 金色，并加粗 */
+/* 提示：井号 + 名字 */
+#king {
+    color: gold;
+    font-weight: bold;
+}
+
+/* 任务 5（难点）：只选中 .cart (购物车) 里面的 li，把背景改成 #f0f0f0 */
+/* 提示：后代选择器，用空格 */
+.cart li {
+    background-color: #f0f0f0;
+}
